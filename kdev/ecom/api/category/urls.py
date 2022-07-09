@@ -5,8 +5,8 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register(r'',views.CategoryViewSet)
+router.register(r'', views.CategoryViewSet)
 
-urlpatterns =[ 
+urlpatterns = [
     path('', include(router.urls))
 ]
